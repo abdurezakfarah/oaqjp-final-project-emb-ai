@@ -17,14 +17,16 @@ def emotionDetector():
 
     emotions = emotion_detector(text)
 
-    print("*********", emotions)
+    dominant_emotion = emotions["dominant_emotion"]
+
+    if not dominant_emotion:
+        return "Invalid text! Please try again!."
 
     anger = emotions["anger"]
     disgust = emotions["disgust"]
     fear = emotions["fear"]
     joy = emotions["joy"]
     sadness = emotions["sadness"]
-    dominant_emotion = emotions["dominant_emotion"]
 
     res = f"For the given statement, the system response is 'anger': {anger}, 'disgust': {disgust}, 'fear': {fear}, 'joy': {joy} and 'sadness': {sadness}. The dominant emotion is {dominant_emotion}."
 
