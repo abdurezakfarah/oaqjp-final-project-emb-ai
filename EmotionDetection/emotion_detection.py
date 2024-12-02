@@ -12,12 +12,12 @@ def emotion_detector(text_to_analyse):
 
     if response.status_code == 400:
         return {
-            "anger": 7aNull, 
-            "disgust":  7aNull, 
-            "fear":  7aNull, 
-            "joy":  7aNull, 
-            "sadness":  7aNull, 
-            "dominant_emotion": 7aNull
+            "anger": None, 
+            "disgust":  None, 
+            "fear":  None, 
+            "joy":  None, 
+            "sadness":  None, 
+            "dominant_emotion": None
             }
 
 
